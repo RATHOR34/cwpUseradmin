@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media-specific CSS (e.g. only for screens less than 768px wide) -->
+    <link rel="stylesheet" href="phone.css">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<style>
+    .container{
+        width: 100% !important;
+    }
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg px-5 shadow-sm nav-custom
+ " style="background-color: #fff;">
+        <div class="container">
+            <a class="navbar-brand pe-4" href="#"><img src="images/logo-cwp.png" alt="" width="115px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-4 ">
+                        <a class="nav-link active text-dark dashboard-link" aria-current="page" href="#">Dashboard</a>
+                    </li>
+
+
+                    <!-- <li class="nav-item dropdown pe-4">
+                        <a class="nav-link dropdown-toggle text-dark dashboard-link"   role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="style.css">
+                            Work Opportunities
+                        </a>
+                         
+                    </li> -->
+                    <li class="nav-item pe-4 ">
+                        <a class="nav-link active text-dark dashboard-link" href="job-listing.html">work
+                            Opportunities</a>
+                    </li>
+                    <li class="nav-item pe-4 pb-1">
+                        <a class="nav-link active text-dark pb-1 dashboard-link" aria-current="page"
+                            href="profile.html">Profile</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Container -->
+        <div class="d-flex align-items-center gap-4 pe-3">
+            <!-- Notification Bell with Badge -->
+            <div class="position-relative " style="top:13px">
+                <i class="bi bi-bell fs-4 text-primary"></i>
+                <span class="position-relative start-100  translate-middle badge rounded-circle bg-success"
+                    style=" padding: 2px !important;height: 14px;width:12px;top: -34px;left: 20px !important; font-size: 8px;">1</span>
+            </div>
+
+            <!-- Profile Image -->
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="rounded-circle profile"
+                width="40" height="40">
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <!-- Clickable Icon Button to Toggle Dropdown -->
+                <button class="btn dropdown-toggle p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="color: transparent;">
+                    <i class="bi bi-chevron-down fs-6 text-primary"></i>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" style="position: absolute;
+    left: -167px;
+    top: 41px;">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-globe pe-1"></i> All Jobs</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-star pe-1"></i> Applied Jobs</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-list pe-1"></i> My Interviews</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-person-lines-fill pe-1"></i> Interview
+                            Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container pt-4 px-0 find-job">
+        <div>
+            <h1 class="fs-4 fw-bold">Find a job with Us</h1>
+            <p>Experience the benifits of canditate Tracking management,and Forecasting</p>
+        </div>
+    </section>
+    <section class="container px-0 p-2">
+
+        <div class="row  align-items-center">
+
+            <!-- Search Input with Icon -->
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-text bg-white border-end-0">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0"
+                        placeholder="Job title, keywords, or company">
+                </div>
+            </div>
+
+            <!-- Experience Level Dropdown -->
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option>Experience Level</option>
+                    <option>Entry</option>
+                    <option>Mid</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+
+            <!-- Salary Estimate Dropdown -->
+            <div class="col-md-2">
+                <select class="form-select">
+                    <option selected>Salary estimate</option>
+                    <option>₹20k+</option>
+                    <option>₹50k+</option>
+                    <option>₹1L+</option>
+                </select>
+            </div>
+
+            <!-- Location Dropdown -->
+            <div class="col-md-4">
+                <select class="form-select">
+                    <option selected>City, State, Zip code, or Remote</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Remote</option>
+                </select>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="bg-light py-5 mt-4" style="border-color: green;">
+            <div class="container bg-white rounded shadow-sm " style="padding: 16px 16px 0px 16px !important;">
+                <div class="row align-items-center">
+
+                    <!-- Left: Progress + Text -->
+                    <div class="col-md-6 d-flex align-items-center gap-4" style="padding: 20px 25px;">
+
+                        <!-- Circular Progress -->
+                        <div class="position-relative" style="width: 100px; height: 100px;">
+                            <svg width="100" height="100">
+                                <circle cx="50" cy="50" r="45" stroke="#e0e0e0" stroke-width="10" fill="none" />
+                                <circle cx="50" cy="50" r="45" stroke="#1A2FE7" stroke-width="10" fill="none"
+                                    stroke-dasharray="282.6" stroke-dashoffset="211.95" stroke-linecap="round"
+                                    transform="rotate(-90 50 50)" />
+                            </svg>
+                            <div class="position-absolute top-50 start-50 translate-middle fw-bold">25%</div>
+                        </div>
+
+                        <!-- Text Content -->
+                        <div>
+                            <h4 class="fw-bold">Complete Career Profile</h4>
+                            <p class="text-muted mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, elit vitae
+                                hendrerit fringilla, mauris ipsum faucibus magna.
+                            </p>
+                            <button class="btn btn-warning text-dark fw-semibold">Complete My Career Profile</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Image -->
+                    <div class="col-md-6 text-center  ">
+                        <img src="images/profile.png" alt="Profile Illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer style="position: fixed; bottom: 0; width: 100%; z-index: 1030;">
+        <div class="footer bg-blue px-5 py-2 d-flex justify-content-end align-items-center">
+            <p class="pe-4 mb-0 text-end">Terms and conditions</p>
+            <p class="pe-3 mb-0">Privacy and policy</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

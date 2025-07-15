@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray">
+    
+    
+    <nav class="navbar navbar-expand-lg  bg-gray px-5 shadow-sm nav-custom position-fixed
+ " style="background-color: #fff;">
+        <div class="container">
+            <a class="navbar-brand pe-4" href="#"><img src="images/logo-cwp.png" alt="" width="115px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-4 ">
+                        <a class="nav-link active text-dark dashboard-link" aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+
+
+                    <!-- <li class="nav-item dropdown pe-4">
+                        <a class="nav-link dropdown-toggle text-dark dashboard-link"   role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="style.css">
+                            Work Opportunities
+                        </a>
+                         
+                    </li> -->
+                     <li class="nav-item pe-4 ">
+                        <a class="nav-link active text-dark dashboard-link"   href="#">work Opportunities</a>
+                    </li>
+                    <li class="nav-item pe-4 pb-1">
+                        <a class="nav-link active text-dark pb-1 dashboard-link" aria-current="page"
+                            href="profile.html">Profile</a>
+                    </li>
+                </ul>
+                 
+            </div>
+        </div>
+        <!-- Container -->
+        <div class="d-flex align-items-center gap-4 pe-3">
+            <!-- Notification Bell with Badge -->
+            <div class="position-relative " style="top:13px">
+                <i class="bi bi-bell fs-4 text-primary"></i>
+                <span class="position-relative start-100  translate-middle badge rounded-circle bg-success"
+                    style=" padding: 2px !important;height: 14px;width:12px;top: -34px;left: 20px !important; font-size: 8px;">1</span>
+            </div>
+
+            <!-- Profile Image -->
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="rounded-circle profile" width="40"
+                height="40">
+
+            <!-- Dropdown -->
+<div class="dropdown">
+  <!-- Clickable Icon Button to Toggle Dropdown -->
+  <button class="btn dropdown-toggle p-0 border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: transparent;">
+    <i class="bi bi-chevron-down fs-6 text-primary"></i>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <ul class="dropdown-menu" style="position: absolute;
+    left: -167px;
+    top: 41px;">
+    <li><a class="dropdown-item" href="#"><i class="bi bi-globe pe-1"></i> All Jobs</a></li>
+    <li><a class="dropdown-item" href="#"><i class="bi bi-star pe-1"></i> Applied Jobs</a></li>
+    <li><a class="dropdown-item" href="#"><i class="bi bi-list pe-1"></i> My Interviews</a></li>
+    <li><a class="dropdown-item" href="#"><i class="bi bi-person-lines-fill pe-1"></i> Interview Feedback</a></li>
+  </ul>
+</div>
+        </div>
+    </nav>
+    <div class="container career-opportunities  py-3 bg-gray " id="loadWorkOpportunities" style="padding-top: 5rem !important;">
+        <div class="find-job d-flex justify-content-between bg-gray position-fixed " style="width: 89%;">
+            <div class="heading">
+                <h1 class="fs-4 fw-bold">Find a job with us</h1>
+                <ul class="d-flex  list-unstyled py-2">
+                    <li><a href="" class="text-decoration-none text-dark pe-4">Freelance(220)</a></li>
+                    <li><a href="" class="text-decoration-none text-dark pe-4">Full-Time(331)</a></li>
+                    <li><a href="" class="text-decoration-none text-dark pe-4">Hire for creativities <i
+                                class="fas fa-share-square text-dark" style="color:gray"></i></a></li>
+                </ul>
+            </div>
+            <div class="search-input">
+                <div class="d-flex align-items-center gap-2 p-2">
+                    <!-- Search input with icon -->
+                    <div class="input-group" style="max-width: 300px;">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="bi bi-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0" placeholder="Search...">
+                    </div>
+
+                    <!-- Filter Button -->
+                    <button class="btn border-2 border-secondary-subtle 
+                    d-flex align-items-center">
+                        <i class="bi bi-plus-lg me-1"></i> Filter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="job-list d-grid gap-3 m-auto " style="grid-template-columns: 2fr 2fr 2fr;position: relative;
+    left: -60px; max-width: 100vh; "> -->
+     <div class="job-list" style="padding: 100px 0px 0px 0px;">
+        <div class="row d-flex gap-3 flex-wrap col-md-12 mb-3 m-auto"> 
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Pathao-logo.svg" alt="">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--2ndiv -->
+            <div class="company-div bg-white p-4  col-md-3  m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/nike.png" alt="" width="100" height="30">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Growth Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Nike</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--2nd div end-->
+            <!--3rd div -->
+            <div class="company-div bg-white p-4 col-md-3  m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/jpmorgan-chase-logo-png.jpg" alt="" width="100px" height="30px" >
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Digital Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">JPMorgan Chase Bank</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            </div>
+            <!--3rd div end-->
+            <!--4th div-->
+            <div class="row d-flex gap-3 flex-wrap col-md-12 mb-3 m-auto"> 
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/cmg-medallion-logo.svg" alt=""width="50px" height="30px">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Sr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">chipatle maxican grill</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--4th div-->
+            <!--5th div-->
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Mattel_(2019).svg.png" alt="" width="50px" height="30px">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Mattel</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--6th div-->
+            <div class="company-div bg-white p-4 col-md-3 m-auto" >
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Pathao-logo.svg" alt="">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            </div>
+            <!--7th div-->
+            <div class="row d-flex gap-3 flex-wrap col-md-12 mb-3 m-auto">
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Pathao-logo.svg" alt="">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            
+            <!--8th div-->
+             
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                           <img src="./images/nike.png" alt="" width="100" height="30">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--9th div-->
+            <div class="company-div bg-white p-4 col-md-3 m-auto" >
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                          <img src="./images/jpmorgan-chase-logo-png.jpg" alt="" width="100px" height="30px" >
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            </div>
+            <!--10th div-->
+            <div class="row d-flex gap-3 flex-wrap col-md-12 mb-3 m-auto"> 
+            <div class="company-div bg-white p-4 col-md-3 m-auto" >
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/cmg-medallion-logo.svg" alt="" width="50" height="30">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+           
+            <!--11th div-->
+            <div class="company-div bg-white p-4 col-md-3 m-auto">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Mattel_(2019).svg.png" alt="" width="50" height="30">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            <!--12th div-->
+            <div class="company-div bg-white p-4 col-md-3 m-auto" >
+                <div class="d-flex justify-content-between align-items-center">
+                    <div width="100px" height="100px">
+                        <img src="./images/Mattel_(2019).svg.png" alt="" width="50" height="30">
+                    </div>
+                    <label for="" class="bg-blue text-primary-dark px-2 rounded-pill"
+                        style="font-size: small; height: 20px;">Full Time</label>
+                </div>
+                <div class="py-3">
+                    <h5 class="fw-bold">Jr.Product Designer</h5>
+                    <p class="text-secondary" style="font-size: 13px;">Pathao limited</p>
+                    <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                        <i class="bi bi-currency-rupee me-2" style="font-size: 14px;"></i>
+                        30,000 - 40,000
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center text-secondary">
+                        <div class="d-flex align-items-center text-secondary" style="font-size: 12px;">
+                            <i class="bi bi-geo-alt me-2" style="font-size: 14px;"></i>
+                            Jaipur Rajasthan
+                        </div>
+                        <label style="display: inline-block; font-size: 12px;" for="">2days-ago</label>
+                    </div>
+
+                </div>
+                <button class="quick-btn">Quick-Apply</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
