@@ -23,3 +23,126 @@
   }
 
 }
+ body{
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ :root {
+   /* Brand Colors */
+   --primary-dark: #1A2FE7;
+   --primary-light: #FFCD4D;
+
+   /* Backgrounds */
+   --bg-blue: #E3E6FF;
+   --bg-green: #DAFED5;
+   --bg-gray: #F6F7F9;
+   --bg-yellow: #FFF6DF;
+
+   /* Text Colors */
+   --text-primary-dark: #1A2FE7;
+   --text-green: #10B260;
+
+   /* Border Colors */
+   --border-green: #10B260;
+   --border-gray: #D5D5D5;
+ }
+
+ /* Background Color Utilities */
+ .bg-blue {
+   background-color: var(--bg-blue) !important;
+ }
+
+ .bg-green {
+   background-color: var(--bg-green) !important;
+ }
+
+ .bg-gray {
+   background-color: var(--bg-gray) !important;
+ }
+
+ .bg-yellow {
+   background-color: var(--bg-yellow) !important;
+ }
+
+ /* Text Color Utilities */
+ .text-primary-dark {
+   color: var(--text-primary-dark) !important;
+ }
+
+ .text-dark {
+   color: #212529 !important;
+ }
+
+ .text-green {
+   color: var(--text-green) !important;
+ }
+
+ /* Border Color Utilities */
+ .border-gray {
+   border-color: var(--border-gray) !important;
+ }
+
+ .border-green {
+   border-color: var(--border-green) !important;
+ }
+
+ .btn-bg {
+   --primary-light: #FFCD4D;
+ }
+
+ ul li a:hover {
+
+   color: #1A2FE7 !important;
+ }
+
+ :root {
+   --primary-dark: #1A2FE7;
+ }
+
+ .dashboard-link {
+   color: var(--primary-dark);
+
+   padding: 0.5rem 0.5rem;
+   border-bottom: 2px solid transparent;
+   display: inline-block;
+   text-decoration: none;
+   transition: border-color 0.3s, color 0.3s;
+ }
+
+ .dashboard-link:hover {
+   border-bottom: 2px solid var(--primary-dark);
+   color: var(--primary-dark);
+ }
+
+ .quick-btn {
+   border: none;
+   background-color: #F6F7F9;
+   width: 100%;
+   font-size: 14px;
+   /* Bootstrap primary */
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+
+ .quick-btn:hover {
+   background-color: black;
+   color: white;
+   /* Darker blue on hover */
+ }
+
+ /* .dashboard-link.active {
+    border-bottom: 2px solid var(--primary-dark);
+  } */
+ a:hover {
+   color: #1A2FE7;
+ }
+
+ .company-div{
+width:361px !important;
+height:265px ;
+ }
+ nav{
+  width: 100%;
+ }
+ .container{
+  width:1140px
+ }

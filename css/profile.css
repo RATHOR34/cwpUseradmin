@@ -1,36 +1,7 @@
-/*Color Style */
-    :root {
-      /* Brand Colors */
-      --primary-dark: #1A2FE7;
-      --primary-light: #FFCD4D;
-
-      /* Backgrounds */
-      --bg-blue: #E3E6FF;
-      --bg-green: #DAFED5;
-      --bg-gray: #F6F7F9;
-      --bg-yellow: #FFF6DF;
-
-      /* Text Colors */
-      --text-dark: #212529;
-      --text-primary-dark: #1A2FE7;
-      --text-green: #10B260;
-
-      /* Border Colors */
-      --border-gray: #D5D5D5;
-      --border-green: #10B260;
-    }
-
-    /* Background Color Utilities */
-    .bg-dgray {
-      color: var(--border-gray) !important;
-    }
-
-    .bg-primary {
-      background-color: var(--primary-dark) !important;
-    }
-    .text-dark{
+   .text-dark{
       color: #212529;
     }
+
     .upload-box {
       width: 150px;
       height: 150px;
@@ -44,29 +15,34 @@
       background-color: #f9f9f9;
       transition: background-color 0.3s;
     }
+
     .upload-box:hover {
       background-color: #f0f0f0;
     }
+
     .upload-box input[type="file"] {
       display: none;
     }
+
     .upload-icon {
       font-size: 24px;
       color: #888;
     }
 
-    @media (max-width: 768px) {
-     .position-relative,.bi-bell,.profile,.bi-chevron-down{
-        display: none;
-     }
-      .navbar {
-    padding-bottom: 0 !important;
-     overflow-x: hidden;
+     
     
-  }
-    footer {
-    position: static !important;
-  }
-  
-      
-}
+    .text-muted{
+      color: #43464D;
+    }
+
+    .form {
+            height: 400px;
+            overflow-y: scroll;
+        }
+
+    .nav-link.active {
+            text-decoration: none;
+            color: #1A2FE7 !important;
+            border-bottom: 1px solid #1A2FE7;
+        }
+    
